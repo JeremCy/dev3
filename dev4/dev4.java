@@ -28,12 +28,18 @@ class Voiture implements Comparable <Voiture> {
     public String toString() {
         return "Voiture{"+"entry= "+compteur +"Marque= " + Marque + '\'' + ", Annnee= " + Annnee +'}';
     }
-}    
-public class dev4{
-public static int main(String[] args) {
-    ArrayList<Voiture>test=new ArrayList<Voiture>();
-    test.add(new Voiture(Marque, Annnee, color));
-    test.remove(Voiture());
+} 
 
+public class dev4{
+
+public static int main(String[] args) {
+
+    ArrayList<Voiture> test=new ArrayList<Voiture>();
+    test.add(new Voiture("bmw", 2000, "vert"));
+    test.remove(Voiture("bmw", 2000, "vert"));
+    Collections.sort(test);  
+    for(Voiture vt:test){  
+    System.out.println(vt.Marque+" "+vt.Annnee+" "+vt.color);  
+    }  
 }
 }
